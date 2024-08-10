@@ -58,9 +58,12 @@
             <select name="color-selector" id="color-selector">
               <option value="white" {% if selected_color == 'white' %}selected{% endif %}>White</option>
               <option value="black" {% if selected_color == 'black' %}selected{% endif %}>Black</option>
-              <!--Add.assignment #1. Add new colours here -->
-
-
+              <option value="red" {% if selected_color == 'red' %}selected{% endif %}>Red</option>
+              <option value="yellow" {% if selected_color == 'yellow' %}selected{% endif %}>Yellow</option>
+              <option value="green" {% if selected_color == 'green' %}selected{% endif %}>Green</option>
+              <option value="blue" {% if selected_color == 'blue' %}selected{% endif %}>Blue</option>
+              <option value="cyan" {% if selected_color == 'cyan' %}selected{% endif %}>Cyan</option>
+              <option value="magenta" {% if selected_color == 'magenta' %}selected{% endif %}>Magenta</option>
             </select>
           </li>
           <li class="form-list_item">
@@ -77,7 +80,7 @@
     </div>
     <div class="meme-block" id="memeBlock">
       
-      <p class="text_top" style="color: '{{selected_color}}'; top: '{{text_top_y}}'">
+      <p class="text_top" style='color:"{{selected_color}}"; top:"{{text_top_y}}"'>
         {{text_top}}
       </p>
 
